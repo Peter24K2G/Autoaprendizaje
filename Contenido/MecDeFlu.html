@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    <link href="style.css" rel="stylesheet">
+    <link href="../style.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600&display=swap" rel="stylesheet">
 
@@ -20,7 +20,6 @@
 </head>
 
 <body>
-
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Barra de Navegacion~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -34,10 +33,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item ">
-                        <a class="nav-link" href="index.html" id="inicio">Inicio</a>
+                        <a class="nav-link" href="../index.html" id="inicio">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Contenido/MecDeFlu.html" id="apuntes">Mecánica de Fluidos</a>
+                        <a class="nav-link" href="MecDeFlu.html" id="MecDeFlu">Mecánica de Fluidos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" id="ModMat">Modelación Matemática</a>
@@ -53,49 +52,43 @@
         </div>
     </nav>
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Section Motivacion~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <div class="container" style="padding-bottom: 5%;">
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~INTRODUCCION~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div class="container">
         <div class="row justify-content-around">
-            <div class="col-12 col-md-8 bg-light rounded">
+            <div class="col-12 col-lg-6">
                 <p>
-                <h1>Motivación</h1>
-                Este sitio web tiene como proposito crear un espacio para registrar un proceso de aprendizaje de un
-                grupo pequeño de estudiantes del pregado en Ingeniería Civil de la Universidad Nacional de Colombia,
-                mientras se encuentran cursando el curos de <span style="font-weight: 600;">Mecánica de
-                    Fluidos</span>, inicialmente el proposito del sitio es mantener un registro de las temáticas
-                abordadas en clase, los temás posteriores que estan por venir y un avance del curso, con el fin de
-                obtener un conocimiento compartido y a su vez crear una vinculación grupal a este tipo de
-                cursos.<br>
-                Las espectativas de este sitio web son algo cortas para el potencial que maneja, quiza se pueda ver
-                como una <i>innecesariedad</i>, sin embargo en lo personal este sitio web tiene triple proposito.
+                    <h1>Mecánica de Fluidos</h1>
+                    El aprendizaje autónomo de esta materia se ha dado mediante la revisión de dos libros guía:
+                    <ul>
+                        <li>Mecánica de Fluidos e Hidráulica <i style="font-weight: 100;">2da edición</i></li>
+                        <li>Mecánica de Fluidos Fundamentos y Aplicaciones <i style="font-weight: 100;">2da edición</i></li>
+                    </ul>
+                    Los conceptos que se iran agregando a esta página tiene como fuente, inicialmente los dos libros ya mencionados, puede que durante el transcurso del semestre se agregue información proveniente de algun otro sitio Web, debidamente Referenciado, o de las sesiones que se lleven a cabo en el curso oficial, como lo pueden ser apuntes de clase, ilustraciones, etc.
                 </p>
-                <ol>
-                    <li>El ya mencionado en los parrafos anteriores</li>
-                    <li>Aprender un poco de lo que he denominado <i>EL UNIVERSO WEB</i> como una herramienta que puede
-                        ser de utilidad en mi carrera profesional</li>
-                    <li>Evitar que el asilamiento en casa debido a la pandemia hiciera del periodo intersemestral 2020
-                        un tiempo no productivo, estoy seguro que las proximas vacaciones tendran que ser unicamente de
-                        relajación, descanso y viajes, esperando que el asilamiento haya terminado</li>
-                </ol>
             </div>
-            <div class="col-sm-12 col-md-4">
-                <div class="card">
-                    <div class="card-header">
-                        <p>ADMINISTRADOR</p>
-                    </div>
-                    <img src="img/card.jpg" class="card-img-top" alt="">
+            <div class="col-6 col-lg-3">
+                <div class="card w-75">
+                    <img src="../img/Libro1.jpg" class="card-img-top" alt="">
                     <div class="card-body">
-                        <h3 class="card-title">Pedro José Romero León</h3>
-                        <p class="card-text">Estudiante Ingeniería Civil <br> Universidad Nacional de Colombia sede
-                            Bogotá</p>
-                        <a href="https://github.com/Peter24K2G" class="btn btn-primary">VER PERFIL</a>
+                        <h6 class="card-title">Mecánica de FLuidos e Hidráulica</h6>
+                        <p class="card-text" style="font-size: 3mm;">Carlos Arturo Duarte Agudelo <br>2da Edición</p> 
+                        <a href="https://www.uneditorial.com/mecanica-de-fluidos-e-hidraulica-2da-edicion-ingenieria-civil.html" class="btn btn-primary" style="font-size: 2mm;" target="_blank">VER LIBRO (tienda)</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="card w-75">
+                    <img src="../img/Libro2.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h6 class="card-title">Mecánica de Fluidos Fundamentos y Aplicaciones</h6>
+                        <p class="card-text" style="font-size: 3mm;">Yunus A. Çengel<br>Jhon M. Cimbala<br>2da Edición</p> 
+                        <a href="https://www.amazon.com/MECÁNICA-FLUIDOS-FUNDAMENTOS-Y-APLICACIONES/dp/6071507790" class="btn btn-primary" style="font-size: 2mm;" target="_blank">VER LIBRO (tienda)</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
