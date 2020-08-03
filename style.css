@@ -1,3 +1,14 @@
 body{
     font-family: 'Titillium Web', sans-serif;
 }
+
+ol.flu{
+    counter-reset: item;
+    list-style-type: none;
+}
+
+ol.flu li:before{
+    content: '2.' counter(item,decimal)'  ';
+    counter-increment: item;
+    font-weight: bold;
+}

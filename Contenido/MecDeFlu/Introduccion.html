@@ -10,9 +10,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    <link href="../style.css" rel="stylesheet">
+    <link href="../../style.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600&display=swap" rel="stylesheet">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
     <title>Autoaprendizaje</title>
 </head>
@@ -34,7 +37,8 @@
                         <a class="nav-link" href="../../index.html" id="inicio">Inicio</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle"  data-toggle="dropdown" href="#" id="apuntes" role="button" aria-haspopup="true" aria-expanded="false">Mecánica de Fluidos</a>
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="apuntes" role="button"
+                            aria-haspopup="true" aria-expanded="false">Mecánica de Fluidos</a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="Preambulo.html">Preambulo</a>
                             <a class="dropdown-item" href="Introduccion.html">Introducción</a>
@@ -59,113 +63,129 @@
         <div class="row justify-content-around">
             <div class="col-12 col-md-6" style="padding: 1em;">
                 <p>
-                    <h1>Introducción y Conceptos Básicos</h1>
-                    La Mecánica de fluidos estudia acerca de los líquidos y los gases en movimiento o en reposo.<br>
-                    <b>Estática de Fluidos</b> Fluidos en Reposo.<br>
-                    <b>Dinámica de Fluidos</b> Fluidos en Movimiento.<br><br>
-                    Tambien se encarga de estudiar los Fluidos casi incompresibles (líquidos,agua,gases a baja temperatura).
+                <h1>Introducción y Conceptos Básicos</h1>
+                La Mecánica de fluidos estudia acerca de los líquidos y los gases en movimiento o en reposo.<br>
+                <b>Estática de Fluidos</b> Fluidos en Reposo.<br>
+                <b>Dinámica de Fluidos</b> Fluidos en Movimiento.<br><br>
+                Tambien se encarga de estudiar los Fluidos casi incompresibles (líquidos,agua,gases a baja temperatura).
                 </p>
             </div>
             <div class="accordion col-12 col-md-6 bg-light rounded" style="padding:1em ;" id="accordionExample">
                 <h6> Algunas ramas de la Mecánica de Fluidos</h6>
                 <div class="card">
-                  <div class="card-header" id="headingOne">
-                    <h2 class="mb-0">
-                      <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="font-weight: 700;">
-                         Hidrodinámica
-                      </button>
-                    </h2>
-                  </div>
-              
-                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                    <div class="card-body">
-                      <b>Hidraulica:</b> Flujos de líquidos en tuberías y canales abiertos.
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+                                style="font-weight: 700;">
+                                Hidrodinámica
+                            </button>
+                        </h2>
                     </div>
-                  </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            <b>Hidraulica:</b> Flujos de líquidos en tuberías y canales abiertos.
+                        </div>
+                    </div>
                 </div>
                 <div class="card">
-                  <div class="card-header" id="headingTwo">
-                    <h2 class="mb-0">
-                      <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="font-weight: 700;">
-                        Dinámica de Gases
-                      </button>
-                    </h2>
-                  </div>
-                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                    <div class="card-body">
-                      Flujo de fluidos que sufren cambios de densidad<br>
-                      <b>Ejemplo:</b> Gases a traves de toberas a alta velocidad.
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+                                style="font-weight: 700;">
+                                Dinámica de Gases
+                            </button>
+                        </h2>
                     </div>
-                  </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Flujo de fluidos que sufren cambios de densidad<br>
+                            <b>Ejemplo:</b> Gases a traves de toberas a alta velocidad.
+                        </div>
+                    </div>
                 </div>
                 <div class="card">
-                  <div class="card-header" id="headingThree">
-                    <h2 class="mb-0">
-                      <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="font-weight: 700;">
-                        Aerodinámica
-                      </button>
-                    </h2>
-                  </div>
-                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                    <div class="card-body">
-                        Flujo de gases, principalmente en el aire, sobre aviones, cohetes y automoviles.
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
+                                style="font-weight: 700;">
+                                Aerodinámica
+                            </button>
+                        </h2>
                     </div>
-                  </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            Flujo de gases, principalmente en el aire, sobre aviones, cohetes y automoviles.
+                        </div>
+                    </div>
                 </div>
                 <div class="card">
-                  <div class="card-header" id="headingFour">
-                    <h2 class="mb-0">
-                      <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="font-weight: 700;">
-                        Meteorología Oceanografía e Hidrología
-                      </button>
-                    </h2>
-                  </div>
-                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                    <div class="card-body">
-                        Flujos que ocurren de manera Natural.
+                    <div class="card-header" id="headingFour">
+                        <h2 class="mb-0">
+                            <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"
+                                style="font-weight: 700;">
+                                Meteorología Oceanografía e Hidrología
+                            </button>
+                        </h2>
                     </div>
-                  </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            Flujos que ocurren de manera Natural.
+                        </div>
+                    </div>
                 </div>
-              </div> 
+            </div>
         </div>
         <div class="row justify-content-around">
             <div class="col-12 " style="padding: 1em;">
                 <h2>1) ¿Qué es un fluido?</h2>
                 <p>
                     Una sustancia que se encuentra en la fase líquida o gaseosa se conoce como fluido.<br>
-                    Los fluidos en estado líquido (Líquidos) toman la forma del recipiente que los contiene, por lo tanto, tienen <b>Volumen constante</b><br>
-                    Los fluidos en estado Gaseoso (Gases), se expanden hasta encontrar las paredes del recipiente, por lo tanto, tienen <b>Volumen variable</b>.
+                    Los fluidos en estado líquido (Líquidos) toman la forma del recipiente que los contiene, por lo
+                    tanto, tienen <b>Volumen constante</b><br>
+                    Los fluidos en estado Gaseoso (Gases), se expanden hasta encontrar las paredes del recipiente, por
+                    lo tanto, tienen <b>Volumen variable</b>.
                 </p>
                 <h3>1.1) Sólidos vs Fluidos</h3>
                 <table class="table">
                     <thead>
-                      <tr>
-                        <th scope="col">Sólidos</th>
-                        <th scope="col">Fluidos</th>
-                      </tr>
+                        <tr>
+                            <th scope="col">Sólidos</th>
+                            <th scope="col">Fluidos</th>
+                        </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <td>Pueden oponer resistencia a un esfuerzo cortante por medio de la deformación</td>
-                        <td>Se deforman de manera continua bajo la influencia del esfuerzo cortante</td>
-                      </tr>
-                      <tr>
-                        <td>El esfuerzo es proporcional a la deformación</td>
-                        <td>El esfuerzo no es proporcional a la deformación</td>
-                      </tr>
-                      <tr>
-                          <td>Un Sólido se deforma hasta la falla</td>
-                          <td>Un Fluido nuca deja de deformarse</td>
-                      </tr>
+                        <tr>
+                            <td>Pueden oponer resistencia a un esfuerzo cortante por medio de la deformación</td>
+                            <td>Se deforman de manera continua bajo la influencia del esfuerzo cortante</td>
+                        </tr>
+                        <tr>
+                            <td>El esfuerzo es proporcional a la deformación</td>
+                            <td>El esfuerzo no es proporcional a la deformación</td>
+                        </tr>
+                        <tr>
+                            <td>Un Sólido se deforma hasta la falla</td>
+                            <td>Un Fluido nuca deja de deformarse</td>
+                        </tr>
                     </tbody>
-                  </table>
+                </table>
             </div>
         </div>
         <div class="row">
             <div class="col-12 col-md-8" style="padding: 1em;">
                 <h3>1.2) Esfuerzo cortante y Esfuerzo Normal</h3>
-                De los conocimientos adquiridos en <i>Estática</i> se conoce que el <b>esfuerzo</b> es la fuerza por unidad de área sobre la cual se encuentra actuando.<br>
-                La componete Normal de una fuerza que actua sobre una superficie, por unidad de área se llama <b>esfuerzo normal</b> y la componente tangencial de una fuerza que actúa sobre una superficie, por unidad de área se llama <b>esfuerzo cortante</b>.<br><br>
+                De los conocimientos adquiridos en <i>Estática</i> se conoce que el <b>esfuerzo</b> es la fuerza por
+                unidad de área sobre la cual se encuentra actuando.<br>
+                La componete Normal de una fuerza que actua sobre una superficie, por unidad de área se llama
+                <b>esfuerzo normal</b> y la componente tangencial de una fuerza que actúa sobre una superficie, por
+                unidad de área se llama <b>esfuerzo cortante</b>.<br><br>
                 Para un fluido en reposo:
                 <ul>
                     <li> El esfuerzo normal se le llama <b>presión</b></li>
@@ -181,10 +201,15 @@
             <div class="col-12 col-md-7">
                 <h3>1.3) Condición de No Deslizamiento</h3>
                 <p>
-                    Usualmente el flujo de un fluido se encuentra limitado por una superficie sólida <b>Ej:</b> El agua derramada sobre la mesa. Es válido preguntarse <i>¿Cómo afectan las superficies sólidas el flujo de un fluido?</i><br>
-                    Un fluido en contacto directo con un sólido <i>"se pega"</i> a la superficie debido a los efectos viscosos, por lo tanto no hay deslizamiento, esto se conoce como <b>Condición de No Deslizamiento</b>.
+                    Usualmente el flujo de un fluido se encuentra limitado por una superficie sólida <b>Ej:</b> El agua
+                    derramada sobre la mesa. Es válido preguntarse <i>¿Cómo afectan las superficies sólidas el flujo de
+                        un fluido?</i><br>
+                    Un fluido en contacto directo con un sólido <i>"se pega"</i> a la superficie debido a los efectos
+                    viscosos, por lo tanto no hay deslizamiento, esto se conoce como <b>Condición de No
+                        Deslizamiento</b>.
                     <img class="float-left" src="../../img/MecDeFlu/ImgProp.1.Perf-Vel.svg"><br><br>
-                    En la parte superior de su espesor, un fluido obtiene su velocidad máxima, en la parte inferior la <b>Condición de No Deslizamiento</b> hace que su velocidad sea cero.<br><br>
+                    En la parte superior de su espesor, un fluido obtiene su velocidad máxima, en la parte inferior la
+                    <b>Condición de No Deslizamiento</b> hace que su velocidad sea cero.<br><br>
                     <b>Nota:</b> La viscosidad del fluido es la responsable de que se presente esta condición.
                 </p>
             </div>
@@ -192,19 +217,27 @@
                 <div class="card">
                     <div class="card-header" id="arrast_de_superf">
                         <h2 class="mb-0">
-                            <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseArrast" aria-expanded="true" aria-controls="collapseArrast" style="font-weight: 700;">
+                            <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseArrast" aria-expanded="true" aria-controls="collapseArrast"
+                                style="font-weight: 700;">
                                 Arrastre de Superficie
                             </button>
                         </h2>
                     </div>
-                    <div id="collapseArrast" class="collapse show" aria-labelledby="arrast_de_superf" data-parent="#Arrast_de_Superf">
+                    <div id="collapseArrast" class="collapse show" aria-labelledby="arrast_de_superf"
+                        data-parent="#Arrast_de_Superf">
                         <div class="card-body">
                             <p>
-                                Como consecuencia de la <b>Condición de No Deslizamiento</b>, el fluido ejerce una fuerza sobre la superficie en dirección del flujo, esta fuerza es conocida como: <b>El arrastre de superficie</b>.<br><br>
-                                Cuando se fuerza a un fluido a moverse sobre una superficie curva, la capa límite, no logra permanecer adherida a la superficie y en algún punto se separa, este fenomeno se conoce como <i><b>separación del flujo</b></i>
-                                <img class="w-100 img-thumbnail" src="../../img/MecDeFlu/L2-fig1-11.png">          
-                                    <p style="font-size: xx-small;">Tomado de <b>Ref[2]</b> Cap.1 Fig.1-11</p>
-                                <b>Nota:</b> La condición de No Desplazamiento se aplicada en todas partes a lo largo de la superficie, incluso, corriente abajo del punto de separación.
+                                Como consecuencia de la <b>Condición de No Deslizamiento</b>, el fluido ejerce una
+                                fuerza sobre la superficie en dirección del flujo, esta fuerza es conocida como: <b>El
+                                    arrastre de superficie</b>.<br><br>
+                                Cuando se fuerza a un fluido a moverse sobre una superficie curva, la capa límite, no
+                                logra permanecer adherida a la superficie y en algún punto se separa, este fenomeno se
+                                conoce como <i><b>separación del flujo</b></i>
+                                <img class="w-100 img-thumbnail" src="../../img/MecDeFlu/L2-fig1-11.png">
+                            <p style="font-size: xx-small;">Tomado de <b>Ref[2]</b> Cap.1 Fig.1-11</p>
+                            <b>Nota:</b> La condición de No Desplazamiento se aplicada en todas partes a lo largo de la
+                            superficie, incluso, corriente abajo del punto de separación.
                             </p>
                         </div>
                     </div>
@@ -214,7 +247,323 @@
         <div class="row">
             <div class="col-12 col-md-8">
                 <h2>2) Clasificación de los flujos de Fluidos</h2>
-                <p>Existe una amplia variedad de problemas del flujo de flidos en la práctica, es conveniente clasificarlos para poderl estudiarlos individualmente</p>
+                <p>
+                    Existe una amplia variedad de problemas del flujo de fluidos en la práctica, es conveniente
+                    clasificarlos para poder estudiarlos individualmente.
+                </p>
+                <ol class="flu">
+                    <li>Regiones viscosas de flujo en comparación con las no viscosas</li>
+                    <li>Flujo interno en comparación con el externo</li>
+                    <li>Fljo compresible en comparación con el incompresible</li>
+                    <li>Flujo laminar en comparación con el turbulento</li>
+                    <li>Flujo natural (o no forzado) en comparación con el forzado</li>
+                    <li>Flujo estacionario en comparación con el no-estacionario</li>
+                    <li>Flujos Unidimensional, Bidimensional y Tridimensional</li>
+                </ol>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" rode="tablist">
+                        <a class="nav-item nav-link active" id="nav-first-tab" data-toggle="tab" href="#nav-first"
+                            role="tab" aria-controls="nav-first" aria-selected="true">2.1</a>
+                        <a class="nav-item nav-link" id="nav-second-tab" data-toggle="tab" href="#nav-second" role="tab"
+                            aria-controls="nav-first" aria-selected="false">2.2</a>
+                        <a class="nav-item nav-link" id="nav-third-tab" data-toggle="tab" href="#nav-third" role="tab"
+                            aria-controls="nav-third" aria-selected="false">2.3</a>
+                        <a class="nav-item nav-link" id="nav-fourth-tab" data-toggle="tab" href="#nav-fourth" role="tab"
+                            aria-controls="nav-fourth" aria-selected="false">2.4</a>
+                        <a class="nav-item nav-link" id="nav-fifth-tab" data-toggle="tab" href="#nav-fifth" role="tab"
+                            aria-controls="nav-fifth" aria-selected="false">2.5</a>
+                        <a class="nav-item nav-link" id="nav-sixth-tab" data-toggle="tab" href="#nav-sixth" role="tab"
+                            aria-controls="nav-sixth" aria-selected="false">2.6</a>
+                        <a class="nav-item nav-link" id="nav-seventh-tab" data-toggle="tab" href="#nav-seventh"
+                            role="tab" aria-controls="nav-seventh" aria-selected="false">2.7</a>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-first" role="tabpanel"
+                        aria-labelledby="nav-first-tab">
+                        <div class="col-12 col-md-7 float-left">
+                            <h3>Regiones viscosas de flujo en comparación con las no viscosas</h3>
+                            <p>
+                                El movimiento de dos capas de un fluido, con diferentes velocidades entre sí desarrolla
+                                una
+                                fuerza de fricción entre ellas, haciendo que la capa más lentra retrase a la capa más
+                                rápida.
+                            <ol>
+                                <li> La resistencia interna al flujo que se genera, esta directamente relacionada a las
+                                    fuerzas de cohesión entre las moléculas del fluido. </li>
+                                <li> La <b>viscosidad</b> es una medida de la adherencia interna de un fluido </li>
+                            </ol>
+                            <h5>Postulado:</h5>
+                            Si 1 & 2 son ciertas, podemos afirmar que: <i>La resistencia interna al flujo depende de la
+                                viscosidad del fluido</i><br><br>
+                            Despreciar los términos en las regiones de flujo no viscoso, simplifica el análisis sin
+                            perder exactitud en el proceso.
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-4 card mb-3 float-right">
+                            <img class="card-img-top" src="../../img/MecDeFlu/L2-fig1-17.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Regiones de Flujo</h5>
+                                <p class="card-text">Desarrollo de regiones de flujo (Viscosas y No Viscosas) como
+                                    resultado de la insersión de una placa paralela al flujo den una corriente con
+                                    velocidad constante</p>
+                                <p class="card-text"><small class="text-muted">Tomado de <b>Ref[2]</b> Cap.1
+                                        Fig.1-11</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-second" role="tabpanel" aria-labelledby="nav-second-tab">
+                        <h3>Flujo interno en comparación con el externo</h3>
+                        <p>
+                            Un fluido al que se le obliga a fluir en un canal confinado, se le llama <b>flujo
+                                interno</b>, este tipo de flujos estan dominados por la viscosidad en todo el campo de
+                            flujo.<br>
+                            <b>Ejemplo:</b>El flujo de agua dentro de un tubo es un <b>flujo interno</b>.<br><br>
+                            Un fluido que fluye sobre una superficie, se le llama <b>flujo externo</b>, este tipo de
+                            flujos solo presenta efectos viscosos en la capa límite cercana a la superficie sólida.<br>
+                            <b>Ejemplo:</b>Flujo de viento alrededor de una pelota.<br>
+                        <h4>Flujo en canal abierto:</h4>
+                        El flujo de líquidos en un ducto parcialmente lleno y con presencia de una superficie libre se
+                        denomina <b>Flujo en canal abierto</b><br>
+                        <b>Ejemplos:</b>
+                        <ul>
+                            <li>Flujo de agua en los ríos</li>
+                            <li>Flujo en zanjas de irrigación</li>
+                        </ul>
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="nav-third" role="tabpanel" aria-labelledby="nav-third-tab">
+                        <h3>Flujo compresible en comparación con el incompresible</h3>
+                        <p>
+                            Un fluido se clasifica como <b>compresible</b> o <b>incompresible</b>, dependiendo del nivel
+                            de variación de la densidad del fluido en ese flujo.<br>
+                        <h4>Flujo Incompresible</h4>
+                        Los flujos Incompresibles poseen una densidad aproximadamente constante en todo el flujo.
+                        <ul>
+                            <li>La densidad de los líquidos es constante, por lo tanto, <i>el flujo de líquidos es
+                                    típicamente incompresible</i> ----> <b>Los líquidos son sustancias
+                                    incompresibles</b></li>
+                            <li>El volumen en todas las porciones del fluido permanece inalterado (constante)</li>
+                        </ul>
+                        <b>Ejemplo:</b>
+                        <ul>
+                            <div class="alert alert-info" role="alert">
+                                <li>Una presión de 210atm hace que la densidad del agua líquida a 1atm cambie en solo 1%
+                                    ----> <b>Los líquidos son Practicamente Incompresibles</b></li>
+                            </div>
+                            <div class="alert alert-success" role="alert">
+                                <li>Una presión de 0.01atm causa un cambio del 1% en la densidad del aire atmosférico
+                                    ----> <b>Los gases son Intensamente Compresibles</b></li>
+                            </div>
+                        </ul>
+                        <h4>Velocidad de Flujo:</h4>
+                        La velocidad del flujo a menudo se expresa en términos del numero adimensional de Mach definido
+                        como:
+                        $$Ma=\frac{v}{c}=\frac{\text{Velocidad del flujo}}{\text{Velocidad del Sonido}}\hspace{1em}$$
+                        La velocidad del sonido (c) en condiciones ambiente es igual a 346m/s.<br>
+                        La clasificación del flujo según su velocidad de flujo se muestra en la siguiente tabla:
+                        <table class="table table-secondary">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Ma</th>
+                                    <th scope="col">=1</th>
+                                    <th scope="col">&lt;1</th>
+                                    <th scope="col">&gt;1</th>
+                                    <th scope="col">&gt;&gt;1</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Flujo</td>
+                                    <td>Sónico</td>
+                                    <td>Subsónico</td>
+                                    <td>Super Sónico</td>
+                                    <td>Hiper Sónico</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h5>Notas:</h5>
+                        <ul>
+                            <li>Pequeños cambios en la densidad de los líquidos que corresponden a grandes cambios de
+                                presión, pueden tener consecuencias importantes, como por ejemplo, el <b>golpe de
+                                    ariete</b> en un tubo de agua, causado por las vibraciones del tubo generadas por la
+                                reflexión de ondas de presión que se presentan después del cierre repentino de válvulas
+                            </li>
+                            <li>La modelación de flujos gaseosos como flujos incompresibles se hace con frecuencia so
+                                los cambios en la densidad se encuentrar por debajo del 5%, lo cual suele se el caso
+                                cuando Ma&lt;0.3, es decir que la compresibilidad de los gases se puede despreciar
+                                cuando el flujo esta por debajo de 100m/s, por lo tanto, <b>El flujo de un gas no es
+                                    necesariamente compresible</b></li>
+                        </ul>
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="nav-fourth" role="tabpanel" aria-labelledby="nav-fourth-tab">
+                        <h3>Flujo laminar en comparación con el turbulento</h3>
+                        <p>
+                            Algunos flujos pueden ser suaves y ordenados, mientras que otros se pueden considerar como
+                            caóticos.
+                        <ol>
+                            <li>
+                                Un movimiento intensamente ordenado, caracterizado por capas no alteradas se conoce como
+                                <b>Flujo Laminar</b>
+                                <ul>
+                                    <li><b>Laminar:</b>Movimiento de partículas juntas adyacentes del fluido, en
+                                        "lamina"</li>
+                                    <li>Flujos de fluidos intesamente viscosos, como el aceite a bajas velocidades, por
+                                        lo general es un flujo laminar</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Un movimiento intensamente desordenado se presenta comunmente a altas velocidades y se
+                                caracteriza por sus fluctuaciones en la velocidad, se conoce como <b>Flujo
+                                    Turbulento</b>
+                                <ul>
+                                    <li>Flujos de fluidos de baja viscosidad, como el aire a velocidades altas es por lo
+                                        común un flujo turbulento</li>
+                                </ul>
+                            </li>
+                        </ol>
+                        <div class="alert alert-info">
+                            <b>Nota:</b> El régimen o tipo de flujo influye significativamente en la potencia requerida
+                            para el bombeo del fluido.
+                        </div>
+                        Un flujo alternante entre laminar y turbulento, se le conoce como <b>Flujo Transitorio</b>
+                        <div class="alert alert-secondary">
+                            El parámetro clave para determinar el régimen del flujo en tubos, es el número adimensional
+                            de Reynolds (Re), Osborn Reynolds - 1880.
+                        </div>
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="nav-fifth" role="tabpanel" aria-labelledby="nav-fifth-tab">
+                        <h3>Flujo Natural (o no forzado) en comparación con el forzado</h3>
+                        <p>
+                            El flujo de un fluido es natural o forzado si su movimiento se inicia de una manera
+                            específica.
+                        <ul>
+                            <li>
+                                <b>Flujo Forzado:</b> Se obliga al fluido a fluir sobre una superficie o en un tubo por
+                                medios externos, como una bomba o un ventilador
+                            </li>
+                            <li>
+                                <b>Flujos Naturales:</b> Movimeinto del fluido debido a medios naturales, como el efecto
+                                de la flotación (elevación del fluido más caliente y caída del fluido más frío), el
+                                efecto de termofisión para el calentamiento de agua es un ejemplo de flujo natural
+                            </li>
+                        </ul>
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="nav-sixth" role="tabpanel" aria-labelledby="nav-sixth-tab">
+                        <h3>Flujo estacionario en comparación con el no-estacionario</h3>
+                        <p>
+                        <h5>Terminología</h5>
+                        <ul>
+                            <li><b>Estacionario:</b> Este término implica que no hay cambio en un punto con el tiempo,
+                                lo opuesto a estacionario es no-estacionario</li>
+                            <li><b>Uniforme:</b>Este término implica que no hay cambio con el lugar sobre una región
+                                específica</li>
+                        </ul>
+                        En mecánica de fluidos el término no-estacionario se refiere a culaquier flujo no estacionario,
+                        el término transitorio se utiliza en el caso de flujos en desarrollo.<br>
+                        El término periodico se refiere al flujo no-estacionario que oscila en torno a una media
+                        estacionaria.<br><br>
+                        <h5>Equipos de Flujo Estacionario</h5>
+                        Turbinas, compresores, calderas, condensadores e intercambiadores de calor son equipos de flujo
+                        estacionario porque operan durante largos periodos de tiempo en las mismas condiciones.<br>
+                        Dentro de un flujo estacionario las condiciones pueden cambiar de punto a punto dentro de un
+                        equipo. Pero en cualquier punto fijo permanecen constantes.
+                        <div class="alert alert-info">
+                            El volumen la masa y la energía total de un equipo de flujo estacionario o sección de flujo
+                            permanecen constantes en la operación estacionaria.
+                        </div>
+                        La operación estacionaria permite que existan o se logren aproximar las condiciones de flujo
+                        estacionario en máquinas donde su propósito es la operación continua (turbinas, bombas,
+                        calderas, condensadores, intercambiadores de calor en plantas generadoras de energía o en
+                        sistemas de refrigeración).<br>
+                        EN algunos equpos cíclicos las propiedades del flujo cambian de manera periodica, el flujo en
+                        este caso se puede analizar como flujo estacionario utilizando los valores de las propiedades
+                        promediados respecto al tiempo.
+                        <div class="alert alert-secondary">
+                            El ingeniero debe saber si para solucionar el problema basta con estudiar condiciones de
+                            <b>flujo estacionario</b> promediadas respecto al tiempo, o si se necesita un estudio más
+                            detallado de las características no-estacionarias.
+                        </div>
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="nav-seventh" role="tabpanel" aria-labelledby="nav-seventh-tab">
+                        <h3>Flujos Unidimensional, Bidimensional y Trisimensional</h3>
+                        <p>
+                            Un flujo es Uni, Bi o Tridimensional, si la velocidad del mismo varía en una, dos o tres
+                            dimensiones, respectivamente, la variación en ciertas direcciones puede ser pequeña
+                            comparada con la variación en otras, por lo tanto podemos ingnorar estas direcciones en un
+                            flujo tridimensional y llevar el problema a flujos Bi o Unidireccionales, más facil de
+                            analizar.
+                        <div class="col-12 col-md-8 float-left">
+                            <h4>Flujo Estacionario de un fluido por un tubo circular</h4>
+                            La velocidad del flujo en todos los puntos sobre la superficie es cero, debido a la
+                            condición de no deslizamiento.<br>
+                            <ul>
+                                <li>El flujo es Bidireccional en la región de entrada, dado que la velocidad cambia
+                                    tanto en r, como en z.</li>
+                                <li>Finalmente el perfil de velocidad se desarrolla plenamente y permanece inalterado
+                                    más alla de cierta distancia de la entrada, alrededor de 10d, cuando el flujo es
+                                    turbulento, cuando es un flujo laminar esta distancia se reduce.</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-4 card mb-3 float-right">
+                            <img class="card-img-top" src="../../img/MecDeFlu/L2-fig1-23.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Flujo Estacionario de un fluido por un tubo circular</h5>
+                                <p class="card-text">El flujo desarrollado totalmente en un tubo circular es
+                                    unidimensional, ya que la
+                                    velocidad varía en dirección radial, el perfil de velocidad es el mismo en cualquier
+                                    ubicación axial z-, y es simétrico al eje del tubo.</p>
+                                <p class="card-text"><small class="text-muted">Tomado de <b>Ref[2]</b> Cap.1
+                                        Fig.1-23</small></p>
+                            </div>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-9">
+                <h2>3) Sistema y Volumen de Control</h2>
+                <p>
+                <h4>Sistema:</h4> Cantidad de materia o región en el espacio elegidas para su estudio.
+                <h5>Sitema Cerrado:</h5> Tambien conocido como masa de control, consta de una cantidad fija de masa, y
+                ninguna masa puede cruzar su frontera. Energía como calor o trabajo puede cruzar la frontera.
+                <ul>
+                    <li>El volumen de un sistema cerrado no tiene que ser fijo</li>
+                    <li>Un sistema que no permite que la energía cruce la frontera, se conoce como <b>sistema
+                            aislado</b></li>
+                </ul>
+                <h5>Sistema Abierto</h5> Tambien conocido como volumen de control, es una región seleccionada de modo
+                adecuado en el espacio. Suele encerrar un aparato relacionado al flujo de masa, como un compresor, una
+                turbina o tobera. El flujo en estos aparatos se estudia apropiadamente cuando se selecciona dentro de
+                ellos una región como volumen de control.<br>
+                Tanto masa como Energía pueden cruzar la frontera de un volumen de control.
+                </p>
+            </div>
+            <div class="col-12 col-md-3 card mb-3 float-right">
+                <img class="card-img-top" src="../../img/MecDeFlu/L2-fig1-26.png" alt="Card image cap">
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><b>Alrededores:</b> Masa o región que se encuentran afuera del
+                            sistema</li>
+                        <li class="list-group-item"><b>Frontera:</b> La superficie real o imaginaria que separa el
+                            sistema de sus alrededores.
+                            <ul>
+                                <li>La frontera de un sistema puede ser fija o movible</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p class="card-text"><small class="text-muted">Tomado de <b>Ref[2]</b> Cap.1 Fig.1-26</small></p>
+                </div>
             </div>
         </div>
     </div>
